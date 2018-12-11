@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.yolo.idea.plugins</id>
+    <name>Android Service Watcher</name>
+    <description>This plugin help you to check System Service Status conveniently. Such as Activity, Service etc.
+    </description>
+    <version>2.0</version>
+    <vendor email="guyanzijin@gmail.com" url=""></vendor>
+
+    <change-notes><![CDATA[
+      The first version, complete the basic function support. Subsequent updates iterate over the new features. Looking forward to your use and feedback!
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="AndroidSystemMonitor" secondary="true" icon="/myToolWindow/plus.png" anchor="right"
+                    factoryClass="com.yolo.idea.plugin.MyToolWindowFactory"/>
+
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
